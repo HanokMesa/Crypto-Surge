@@ -1,3 +1,3 @@
-# Cryptocurrency Tracker with React JS, Material UI and Chart JS
+# Cryptocurrency Tracking with React JS, Material UI and Chart JS
 
 This crypto surge app shows all the information regarding the crypto currencies.
