@@ -37,6 +37,17 @@ const Carousel = () => {
       textTransform: "uppercase",
       color: "white",
     },
+    rotatedImg: {
+      animation: '$rotate 4s linear infinite', // Referring to the rotate animation defined in the CSS
+    },
+    '@keyframes rotate': {
+      from: {
+        transform: 'rotate(0deg)',
+      },
+      to: {
+        transform: 'rotate(360deg)',
+      },
+    },
   }));
 
   const classes = useStyles();
@@ -46,7 +57,7 @@ const Carousel = () => {
 
     return (
       <Link className={classes.carouselItem} to={`/coins/${coin.id}`}>
-        <img
+        <img className={classes.rotatedImg}
           src={coin?.image}
           alt={coin.name}
           height="80"
